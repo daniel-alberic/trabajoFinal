@@ -1,0 +1,335 @@
+/*VARIABLES CSS */
+/* EL root es el selector padre */
+:root {
+    --colorprimario: #EC111A;
+    --colorsecundario: #082BA5;
+    --colorterciario: #007BDF;
+    --colortitulos: #282D31;
+    --colorparrafos: #53575A;
+    --colorsombras: #282D31;
+}
+
+/* 1. Contenedor principal (con el nombre correcto: productos) */
+.productos {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    padding: 20px;
+    max-width: 600px;
+    /* Limita el ancho para que se vea ordenado */
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Tarjeta de cada producto: Fuerza a que la foto vaya al COSTADO */
+.productos .tarjeta-producto {
+    display: flex !important;
+    flex-direction: row !important;
+    /* Pone la foto al costado izquierdo y textos al derecho */
+    align-items: center !important;
+    /* Centra verticalmente la foto con los textos */
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+/* 3. ACHICA LAS IMÁGENES de forma obligatoria */
+.productos .tarjeta-producto img {
+    width: 100px !important;
+    /* Tamaño ideal para que se vea chico al costado */
+    height: 100px !important;
+    /* Altura fija idéntica para las 4 */
+    object-fit: contain !important;
+    /* Evita que las cajas de medicina se deformen */
+    margin-right: 20px !important;
+    /* Separa la foto del texto derecho */
+    flex-shrink: 0 !important;
+    /* Evita que la foto se aplaste */
+}
+
+/* 4. Bloque derecho que agrupa los textos */
+.productos .info-producto {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    flex-grow: 1 !important;
+}
+
+/* Nombre del producto */
+.productos .tarjeta-producto h3 {
+    font-size: 14px !important;
+    color: #0f2d59 !important;
+    font-weight: normal !important;
+    margin: 0 0 6px 0 !important;
+}
+
+/* Los precios exactos de tu captura en color rojo */
+.productos .precio {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: #cc0022 !important;
+    margin: 0 0 10px 0 !important;
+}
+
+/* Botón "Agregar" en rojo y compacto */
+.productos button {
+    background-color: #ffffff !important;
+    color: #cc0022 !important;
+    border: 1px solid #cc0022 !important;
+    padding: 6px 20px !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s, color 0.2s !important;
+}
+
+.productos button:hover {
+    background-color: #cc0022 !important;
+    color: #ffffff !important;
+}
+
+/* Reemplaza ".contenedor" por la clase real de tu recuadro de productos */
+.productos {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    display: block !important;
+}
+/* TODA LA ZONA DE FARMACIA */
+
+.pagina-farmacia {
+  display: flex;
+  gap: 40px;
+  padding: 30px 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* -------------------------- */
+/* FILTROS DE LA IZQUIERDA */
+/* -------------------------- */
+
+.filtros {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.filtros h2 {
+  color: #07549c;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+
+/* Cada filtro */
+
+.filtro {
+  border-bottom: 1px solid #dddddd;
+  padding: 15px 0;
+  display: block;
+}
+
+
+/* Nombre del filtro */
+
+.filtro summary {
+  color: #07549c;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Opciones debajo de la flecha */
+
+.opciones {
+  display: block;
+  padding-top: 15px;
+}
+
+
+/* Cada opción ocupa una línea */
+
+.opciones label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+/* Espacio entre cuadrado y texto */
+
+.opciones input {
+  margin-right: 8px;
+}
+
+
+.filtro h3 {
+  font-size: 16px;
+  color: #07549c;
+  margin: 0;
+}
+
+.filtro span {
+  color: #999999;
+  font-size: 20px;
+}
+
+
+/* -------------------------- */
+/* PRECIO */
+/* -------------------------- */
+
+.barra-precio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.punto {
+  width: 12px;
+  height: 12px;
+  background-color: #07549c;
+  border-radius: 50%;
+}
+
+.linea {
+  height: 4px;
+  background-color: #07549c;
+  flex: 1;
+}
+
+.precio-filtro {
+  display: block;
+}
+
+.precio-filtro p {
+  text-align: right;
+  color: #777777;
+  font-size: 13px;
+}
+
+
+/* -------------------------- */
+/* ZONA DE PRODUCTOS */
+/* -------------------------- */
+
+.zona-productos {
+  flex: 1;
+}
+
+
+/* Texto "2492 PRODUCTOS" */
+
+.titulo-productos {
+  font-size: 18px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+
+.titulo-productos span {
+  color: #000000;
+}
+
+
+/* -------------------------- */
+/* GRILLA */
+/* -------------------------- */
+
+.contenedor-productos {
+  display: grid;
+
+  /* 3 productos por fila */
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* -------------------------- */
+/* TARJETA DEL PRODUCTO */
+/* -------------------------- */
+
+.tarjeta-producto {
+  background-color: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+
+  padding: 15px;
+
+  min-height: 330px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Imagen */
+
+.tarjeta-producto img {
+  width: 100%;
+  height: 170px;
+
+  object-fit: contain;
+
+  margin-bottom: 15px;
+}
+
+
+/* Nombre */
+
+.tarjeta-producto h3 {
+  color: #07549c;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+
+/* Precio */
+
+.tarjeta-producto .precio {
+  color: #ed1b3b;
+
+  font-size: 17px;
+
+  font-weight: bold;
+
+  margin-top: auto;
+}
+
+
+/* Botón */
+
+.tarjeta-producto button {
+  width: 100%;
+
+  background-color: white;
+
+  color: #ed1b3b;
+
+  border: 1px solid #ed1b3b;
+
+  border-radius: 5px;
+
+  padding: 10px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* Cuando pasas el mouse */
+
+.tarjeta-producto button:hover {
+  background-color: #ed1b3b;
+  color: white;
+}
