@@ -10,9 +10,13 @@
 }
 
 .IconoHS {
-    color: #2460c1;
+    color: #2375f7;
+    transition: 1.5s;
 }
 
+.IconoHS:hover{
+    color: #1754b6;
+}
 .row{
     padding: 10px;
 }
