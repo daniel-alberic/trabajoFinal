@@ -22,250 +22,262 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="image/Farm-Universal.png" alt="" height="120" width="120"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trabajo</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              contacto
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/Farm-Universal.png" alt="" width="120" height="50" class="img-fluid" />
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i
+                                class="fa-solid fa-circle-user"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alberic.html"><i class="fa-solid fa-percent"></i>ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marcelo.html"><i class="fa-solid fa-prescription-bottle"></i>Farmacia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Adel.html"><i class="fa-solid fa-person-cane"></i>Adulto Mayor</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fran.html"><i class="fa-solid fa-flask"></i>formulas Magistrales</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sebastian.html"><i class="fa-solid fa-tag"></i></a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   <div class="pagina-farmacia">
 
-  <!-- FILTROS DE LA IZQUIERDA -->
-  <aside class="filtros">
+    <!-- FILTROS DE LA IZQUIERDA -->
+    <aside class="filtros">
 
-  <h2>Farmacia</h2>
+      <h2>Farmacia</h2>
 
-  <details class="filtro">
-    <summary>Departamento</summary>
+      <details class="filtro">
+        <summary>Departamento</summary>
 
-    <div class="opciones">
-      <label><input type="checkbox"> Medicinas</label>
-      <label><input type="checkbox"> Dispositivos Médicos</label>
-      <label><input type="checkbox"> Cuidado Personal</label>
-      <label><input type="checkbox"> Vitaminas</label>
-    </div>
-  </details>
-
-
-  <details class="filtro">
-    <summary>Categoría</summary>
-
-    <div class="opciones">
-      <label><input type="checkbox"> Medicamentos</label>
-      <label><input type="checkbox"> Higiene</label>
-      <label><input type="checkbox"> Belleza</label>
-    </div>
-  </details>
+        <div class="opciones">
+          <label><input type="checkbox"> Medicinas</label>
+          <label><input type="checkbox"> Dispositivos Médicos</label>
+          <label><input type="checkbox"> Cuidado Personal</label>
+          <label><input type="checkbox"> Vitaminas</label>
+        </div>
+      </details>
 
 
-  <details class="filtro">
-    <summary>Sub-Categoría</summary>
+      <details class="filtro">
+        <summary>Categoría</summary>
 
-    <div class="opciones">
-      <label><input type="checkbox"> Tabletas</label>
-      <label><input type="checkbox"> Jarabes</label>
-      <label><input type="checkbox"> Cremas</label>
-    </div>
-  </details>
-
-
-  <details class="filtro">
-    <summary>Marca</summary>
-
-    <div class="opciones">
-      <label><input type="checkbox"> Accu-Chek</label>
-      <label><input type="checkbox"> FreeStyle</label>
-      <label><input type="checkbox"> Jelonet</label>
-    </div>
-  </details>
+        <div class="opciones">
+          <label><input type="checkbox"> Medicamentos</label>
+          <label><input type="checkbox"> Higiene</label>
+          <label><input type="checkbox"> Belleza</label>
+        </div>
+      </details>
 
 
-  <details class="filtro">
-    <summary>Sabor</summary>
+      <details class="filtro">
+        <summary>Sub-Categoría</summary>
 
-    <div class="opciones">
-      <label><input type="checkbox"> Chocolate</label>
-      <label><input type="checkbox"> Vainilla</label>
-      <label><input type="checkbox"> Fresa</label>
-    </div>
-  </details>
-
-
-  <details class="filtro">
-    <summary>Talla</summary>
-
-    <div class="opciones">
-      <label><input type="checkbox"> Pequeña</label>
-      <label><input type="checkbox"> Mediana</label>
-      <label><input type="checkbox"> Grande</label>
-    </div>
-  </details>
-
-</aside>
+        <div class="opciones">
+          <label><input type="checkbox"> Tabletas</label>
+          <label><input type="checkbox"> Jarabes</label>
+          <label><input type="checkbox"> Cremas</label>
+        </div>
+      </details>
 
 
+      <details class="filtro">
+        <summary>Marca</summary>
 
-  <!-- ZONA DE PRODUCTOS -->
-  <main class="zona-productos">
+        <div class="opciones">
+          <label><input type="checkbox"> Accu-Chek</label>
+          <label><input type="checkbox"> FreeStyle</label>
+          <label><input type="checkbox"> Jelonet</label>
+        </div>
+      </details>
 
-    <div class="titulo-productos">
-      <span>6</span> PRODUCTOS
-    </div>
+
+      <details class="filtro">
+        <summary>Sabor</summary>
+
+        <div class="opciones">
+          <label><input type="checkbox"> Chocolate</label>
+          <label><input type="checkbox"> Vainilla</label>
+          <label><input type="checkbox"> Fresa</label>
+        </div>
+      </details>
 
 
-    <div class="contenedor-productos">
+      <details class="filtro">
+        <summary>Talla</summary>
 
-      <!-- PRODUCTO 1 -->
-      <div class="tarjeta-producto">
+        <div class="opciones">
+          <label><input type="checkbox"> Pequeña</label>
+          <label><input type="checkbox"> Mediana</label>
+          <label><input type="checkbox"> Grande</label>
+        </div>
+      </details>
 
-        <img src="image/156432-1200-auto.webp" alt="Accu Chek Guide">
+    </aside>
 
-        <h3>
-          Accu Chek Guide Tiras Reactivas - Caja 50 und
-        </h3>
 
-        <p class="precio">
-          S/ 102.10
-        </p>
 
-        <button>
-          Agregar
-        </button>
+    <!-- ZONA DE PRODUCTOS -->
+    <main class="zona-productos">
 
+      <div class="titulo-productos">
+        <span>6</span> PRODUCTOS
       </div>
 
 
-      <!-- PRODUCTO 2 -->
-      <div class="tarjeta-producto">
+      <div class="contenedor-productos">
 
-        <img src="image/162163-1200-auto.webp" alt="Epotropin">
+        <!-- PRODUCTO 1 -->
+        <div class="tarjeta-producto">
 
-        <h3>
-          Epotropin A 2000 UI/ml Solución Inyectable - Vial 1 ml
-        </h3>
+          <img src="image/156432-1200-auto.webp" alt="Accu Chek Guide">
 
-        <p class="precio">
-          S/ 27.00
-        </p>
+          <h3>
+            Accu Chek Guide Tiras Reactivas - Caja 50 und
+          </h3>
 
-        <button>
-          Agregar
-        </button>
+          <p class="precio">
+            S/ 102.10
+          </p>
+
+          <button>
+            Agregar
+          </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 2 -->
+        <div class="tarjeta-producto">
+
+          <img src="image/162163-1200-auto.webp" alt="Epotropin">
+
+          <h3>
+            Epotropin A 2000 UI/ml Solución Inyectable - Vial 1 ml
+          </h3>
+
+          <p class="precio">
+            S/ 27.00
+          </p>
+
+          <button>
+            Agregar
+          </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 3 -->
+        <div class="tarjeta-producto">
+
+          <img src="image/156435-1200-auto.webp" alt="Tiras Reactivas">
+
+          <h3>
+            Tiras Reactivas Accu-Chek
+          </h3>
+
+          <p class="precio">
+            S/ 102.10
+          </p>
+
+          <button>
+            Agregar
+          </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 4 -->
+        <div class="tarjeta-producto">
+
+          <img src="image/161774-1200-auto.webp" alt="Epi-Derm">
+
+          <h3>
+            Epi-Derm Gel para Cicatrices
+          </h3>
+
+          <p class="precio">
+            S/ 152.90
+          </p>
+
+          <button>
+            Agregar
+          </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 5 -->
+        <div class="tarjeta-producto">
+
+          <img src="image/165650-1200-auto.webp" alt="FreeStyle">
+
+          <h3>
+            Sensor FreeStyle Libre
+          </h3>
+
+          <p class="precio">
+            S/ 109.09
+          </p>
+
+          <button>
+            Agregar
+          </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 6 -->
+        <div class="tarjeta-producto">
+
+          <img src="image/162360-1200-auto.webp" alt="Jelonet">
+
+          <h3>
+            Jelonet Apósito (10 x 10 cm)
+          </h3>
+
+          <p class="precio">
+            S/ 3.50
+          </p>
+
+          <button>
+            Agregar
+          </button>
+
+        </div>
 
       </div>
 
+    </main>
 
-      <!-- PRODUCTO 3 -->
-      <div class="tarjeta-producto">
-
-        <img src="image/156435-1200-auto.webp" alt="Tiras Reactivas">
-
-        <h3>
-          Tiras Reactivas Accu-Chek
-        </h3>
-
-        <p class="precio">
-          S/ 102.10
-        </p>
-
-        <button>
-          Agregar
-        </button>
-
-      </div>
-
-
-      <!-- PRODUCTO 4 -->
-      <div class="tarjeta-producto">
-
-        <img src="image/161774-1200-auto.webp" alt="Epi-Derm">
-
-        <h3>
-          Epi-Derm Gel para Cicatrices
-        </h3>
-
-        <p class="precio">
-          S/ 152.90
-        </p>
-
-        <button>
-          Agregar
-        </button>
-
-      </div>
-
-
-      <!-- PRODUCTO 5 -->
-      <div class="tarjeta-producto">
-
-        <img src="image/165650-1200-auto.webp" alt="FreeStyle">
-
-        <h3>
-          Sensor FreeStyle Libre
-        </h3>
-
-        <p class="precio">
-          S/ 109.09
-        </p>
-
-        <button>
-          Agregar
-        </button>
-
-      </div>
-
-
-      <!-- PRODUCTO 6 -->
-      <div class="tarjeta-producto">
-
-        <img src="image/162360-1200-auto.webp" alt="Jelonet">
-
-        <h3>
-          Jelonet Apósito (10 x 10 cm)
-        </h3>
-
-        <p class="precio">
-          S/ 3.50
-        </p>
-
-        <button>
-          Agregar
-        </button>
-
-      </div>
-
-    </div>
-
-  </main>
-
-</div>
+  </div>
 
 </body>
 
