@@ -5,19 +5,33 @@
 }
 
 .navegacion {
-    background: #bdbdbdaa;
     color: #164ca2;
+    background: rgb(218, 218, 218);
 }
 
 .IconoHS {
-    color: #2375f7;
-    transition: 1.5s;
+    color: #8ca4c7;
+    transition: 1s;
 }
 
 .IconoHS:hover{
     color: #1754b6;
 }
-.row{
-    padding: 10px;
+
+.IconoAR{
+    color:#8ca4c7;
+    transition: 1s;
 }
 
+.IconoAR:hover{
+    color: #1754b6;
+}
+
+.sr{
+    color: #8ca4c7;
+    transition: 1s;
+}
+
+.sr:hover{
+    color: #1754b6;
+}
