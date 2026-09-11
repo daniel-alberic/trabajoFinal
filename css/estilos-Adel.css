@@ -6,7 +6,15 @@
 
 .navegacion {
     color: #164ca2;
-    background: rgb(218, 218, 218);
+    background: #060b9f;
+}
+
+.fa-solid{
+    color: #eeeeee;
+}
+
+i{
+    color: #eeeeee;
 }
 
 .IconoHS {
