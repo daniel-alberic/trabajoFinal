@@ -35,3 +35,24 @@
 .sr:hover{
     color: #1754b6;
 }
+
+.col-md-5{
+  background-color: white;
+
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+
+  min-height: 330px;
+  gap: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.manco{
+    color: #164ca2;
+}
+
+.roge{
+    text-decoration: none;
+}
